@@ -4,7 +4,7 @@ public class Main
 {   
  
 	public static void main(String[] args) {
-		System.out.println("Лабораторная работа №1 \n\nЗадача:\nНаписать программу реализующую текстовое меню \n\nВыполнил: Титов Денис \n\nНажмите ENTER чтобы начать");
+		System.out.println("Лабораторная работа №1 \n\nЗадача:\nНаписать программу реализующую текстовое меню \n\nВыполнил: Экбиев Руслан \n\nНажмите ENTER чтобы начать");
 	    Scanner in = new Scanner(System.in);
         String ENTER = in.nextLine();
         while(true) {
