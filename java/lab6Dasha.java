@@ -36,7 +36,7 @@ public class lab6Dasha {
                     \033[H\033[2J
                     Меню
 
-                    1. Определение числа на простоту
+                    1. Сортировка последовательности символов
                     2. Выход
                     Выберите пункт меню:""");
             String item = in.nextLine();
@@ -59,7 +59,7 @@ public class lab6Dasha {
                     String item2 = in.nextLine();
                     switch (item2) {
                         case ("1") -> {
-                            FileWriter fileWriter = new FileWriter("sorted_arr");
+                            FileWriter fileWriter = new FileWriter("sorted_arr.txt");
                             PrintWriter printWriter = new PrintWriter(fileWriter);
                             printWriter.print(Arrays.toString(chars));
                             printWriter.close();
@@ -67,6 +67,7 @@ public class lab6Dasha {
                         }
                         case ("2") -> {
                             System.out.printf(Arrays.toString(chars));
+                            in.nextLine();
                         }
                         default -> {
                             System.out.printf("\nОшибка при выборе пункта - пункт '%s' не найден.", item);
